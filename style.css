@@ -1,0 +1,42 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+ .fa-solid {
+     color: var(--main-color);
+ }
+    
+
+/*Header*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+/*Body*/
+
+.trouvez-hébergement, p{
+    font-size: 16px;
+}
+
+.zone_marseille {
+    display: flex;
+}
+
+.zone_populaire {
+    display: flex;
+}
+
+.zone_activités {
+    display: flex;
+}
