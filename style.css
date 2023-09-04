@@ -29,6 +29,67 @@ header {
     font-size: 16px;
 }
 
+.search {
+    position: relative;
+    display: flex;
+}
+
+.searchLogo {
+    border: 2px solid var(--main-color);
+
+}
+
+.searchBarre {
+    width: 10%;
+    border: 2px solid var(--main-color);
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+    outline: none;
+}
+
+.searchButton {
+    border: 2px solid var(--main-color);
+    color: var(--filter-bg-color);
+    background-color: var(--main-color);
+    border-radius: 0% 8% 8% 0%;
+}
+
+.searchButton:hover {
+    color: red;
+}
+
+.Filtres {
+    display: flex;
+    flex-direction: row;
+}
+
+.filtreButton {
+    border: solid var(--main-bg-color);
+    border-radius:35%;
+    width: 7%;
+    padding: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    color: var(--main-color);
+    display: flex;
+    position: row;
+    
+}
+
+.filtreButton:hover {
+    color: var(--main-color);
+    border-color: var(--main-bg-color);
+}
+
+.infoLogo {
+    border: solid 1px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 8px 10px 8px 10px;
+}
+
 .zone_marseille {
     display: flex;
 }
