@@ -94,18 +94,117 @@ header {
     border-color: var(--main-color);
 }
 
+                /**Grande section**/
+
+.marseillepopulaire {
+    display: flex;
+    flex-direction: row;
+    
+}
+
             /**Zone Hébergement à Marseille**/
 
 .zone_marseille {
-    display: flex;
-    flex-direction: column; 
-    width: 65%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 40% 40% 10%;
     background-color: var(--filter-bg-color);
+    margin-right: 25px;
+    margin-bottom: 100px;
+    gap: 10px;
+    
 }
     .marseilleImg {
-        width: 19%;
+        width: 100%;
         height: 200px;
         gap: 5px;
+        border-radius: 20% 20% 0 0;
+    }
+
+    .art0 {
+        grid-column-start: 1; 
+        grid-column-end: 3;  
+        grid-row-start: 1;
+        grid-row-end: 1; 
+    }
+
+    .art1 {
+        grid-column-start: 1; 
+        grid-column-end: 1; 
+        grid-row-start: 2;
+        grid-row-end: 2;
+        border: solid 1px white;
+        border-radius: 20% 20% 0 0;
+        margin-bottom: 25px;
+        background-color: var(--main-bg-color);
+    }
+
+    .art2 {
+        grid-column-start: 2; 
+        grid-column-end: 2; 
+        grid-row-start: 2;
+        grid-row-end: 2;
+        border: solid 1px white;
+        border-radius: 20% 20% 0 0;
+        margin-bottom: 25px;
+        background-color: var(--main-bg-color);
+    }
+
+    .art3 {
+        grid-column-start: 3; 
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        border: solid 1px white;
+        border-radius: 20% 20% 0 0;
+        margin-bottom: 25px;
+        background-color: var(--main-bg-color);
+
+    }
+
+    .art4 {
+        grid-column-start: 1; 
+        grid-column-end: 1; 
+        grid-row-start: 3;
+        grid-row-end: 3;
+        border: solid 1px white;
+        border-radius: 20% 20% 0 0;
+        margin-bottom: 25px;
+        background-color: var(--main-bg-color);
+
+    }
+
+    .art5 {
+        grid-column-start: 2; 
+        grid-column-end: 2; 
+        grid-row-start: 3;
+        grid-row-end: 3;
+        border: solid 1px white;
+        border-radius: 20% 20% 0 0;
+        margin-bottom: 25px;
+        background-color: var(--main-bg-color);
+
+    }
+
+    .art6 {
+        grid-column-start: 3; 
+        grid-column-end: 3; 
+        grid-row-start: 3;
+        grid-row-end: 3;
+        border: solid 1px white;
+        border-radius: 20% 20% 0 0;
+        margin-bottom: 25px;
+        background-color: var(--main-bg-color);
+
+    }
+
+    .art7 {
+        grid-column-start: 1; 
+        grid-column-end: 3; 
+        grid-row-start: 4;
+        grid-row-end: 4;
+        margin-bottom: 50px;
+
     }
 
 
@@ -114,11 +213,42 @@ header {
 .zone_populaire {
     display: flex;
     flex-direction: column;
+    background-color: var(--filter-bg-color);
+    width: 25%;
+    gap: 20px;
+    padding: 20px;
 }
     .populaireImg {
-        width: 10%;
-        height: 220px;
+        width: 200px;
+        height: 150px;
     }
+
+.h1populaire {
+    display: flex;
+    flex-direction: row;
+}
+
+.pop1 {
+    background-color: var(--main-bg-color);
+    width: 100%;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.pop2 {
+    background-color: var(--main-bg-color);
+}
+
+.pop3 {
+    background-color: var(--main-bg-color);
+}
+
+.img7 {
+    border-radius: 20% 0 0 20%;
+}
 
 
             /**Zone Activités**/
