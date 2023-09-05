@@ -1,4 +1,4 @@
-/****** General ***********/
+        /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -14,7 +14,7 @@
  }
     
 
-/*Header*/
+            /*Header*/
 
 header {
     display: flex;
@@ -23,7 +23,9 @@ header {
     font-size: 24px;
 }
 
-/*Body*/
+            /*Body*/
+
+        /**Zone trouver un Hébergement**/
 
 .trouvez-hébergement, p{
     font-size: 16px;
@@ -88,15 +90,38 @@ header {
     border-radius: 50%;
     background-color: white;
     padding: 8px 10px 8px 10px;
+    color: var(--main-color);
+    border-color: var(--main-color);
 }
+
+            /**Zone Hébergement à Marseille**/
 
 .zone_marseille {
     display: flex;
+    flex-direction: column; 
+    width: 65%;
+    background-color: var(--filter-bg-color);
 }
+    .marseilleImg {
+        width: 19%;
+        height: 200px;
+        gap: 5px;
+    }
+
+
+            /**Zone les plus populaires**/
 
 .zone_populaire {
     display: flex;
+    flex-direction: column;
 }
+    .populaireImg {
+        width: 10%;
+        height: 220px;
+    }
+
+
+            /**Zone Activités**/
 
 .zone_activités {
     display: flex;
