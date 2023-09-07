@@ -29,6 +29,7 @@ header {
 
 .trouvez-hébergement, p{
     font-size: 16px;
+    margin-top: 0;
 }
 
 .search {
@@ -64,20 +65,20 @@ header {
 .Filtres {
     display: flex;
     flex-direction: row;
+    margin: 20px;
 }
 
 .filtreButton {
     border: solid var(--main-bg-color);
     border-radius:35%;
-    width: 7%;
+    width: 180px;
     padding: 15px;
     margin-left: 25px;
     margin-right: 25px;
     text-align: center;
     color: var(--main-color);
     display: flex;
-    position: row;
-    
+    justify-content: center;
 }
 
 .filtreButton:hover {
@@ -89,7 +90,10 @@ header {
     border: solid 1px;
     border-radius: 50%;
     background-color: white;
-    padding: 8px 10px 8px 10px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
     color: var(--main-color);
     border-color: var(--main-color);
 }
@@ -99,7 +103,7 @@ header {
 .marseillepopulaire {
     display: flex;
     flex-direction: row;
-    
+    margin-top: 30px;
 }
 
             /**Zone Hébergement à Marseille**/
@@ -108,10 +112,9 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 10% 40% 40% 10%;
-    background-color: var(--filter-bg-color);
-    margin-right: 25px;
-    margin-bottom: 100px;
-    gap: 10px;
+    background-color: var(--main-bg-color);
+    margin: 0 20px 0 20px;
+    gap: 20px;
     
 }
     .marseilleImg {
@@ -136,7 +139,9 @@ header {
         border: solid 1px white;
         border-radius: 20% 20% 0 0;
         margin-bottom: 25px;
-        background-color: var(--main-bg-color);
+        background-color:white;
+        align-items: center;
+        text-align: center;
     }
 
     .art2 {
@@ -148,6 +153,8 @@ header {
         border-radius: 20% 20% 0 0;
         margin-bottom: 25px;
         background-color: var(--main-bg-color);
+        align-items: center;
+        text-align: center;
     }
 
     .art3 {
@@ -159,7 +166,8 @@ header {
         border-radius: 20% 20% 0 0;
         margin-bottom: 25px;
         background-color: var(--main-bg-color);
-
+        align-items: center;
+        text-align: center;
     }
 
     .art4 {
@@ -171,7 +179,8 @@ header {
         border-radius: 20% 20% 0 0;
         margin-bottom: 25px;
         background-color: var(--main-bg-color);
-
+        align-items: center;
+        text-align: center;
     }
 
     .art5 {
@@ -183,7 +192,8 @@ header {
         border-radius: 20% 20% 0 0;
         margin-bottom: 25px;
         background-color: var(--main-bg-color);
-
+        align-items: center;
+        text-align: center;
     }
 
     .art6 {
@@ -195,7 +205,8 @@ header {
         border-radius: 20% 20% 0 0;
         margin-bottom: 25px;
         background-color: var(--main-bg-color);
-
+        align-items: center;
+        text-align: center;
     }
 
     .art7 {
@@ -207,6 +218,8 @@ header {
 
     }
 
+    .marseillepopulaire, .zone_marseille, .zone_populaire {
+        width: 100%;}
 
             /**Zone les plus populaires**/
 
@@ -215,8 +228,10 @@ header {
     flex-direction: column;
     background-color: var(--filter-bg-color);
     width: 25%;
-    gap: 20px;
+    gap: 50px;
     padding: 20px;
+    margin: 0 20px 0 0;
+    
 }
     .populaireImg {
         width: 200px;
@@ -226,6 +241,7 @@ header {
 .h1populaire {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .pop1 {
@@ -240,19 +256,73 @@ header {
 
 .pop2 {
     background-color: var(--main-bg-color);
+    width: 100%;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .pop3 {
     background-color: var(--main-bg-color);
+    width: 100%;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
-.img7 {
+.img7, .img8, .img9 {
     border-radius: 20% 0 0 20%;
 }
 
 
             /**Zone Activités**/
 
-.zone_activités {
+.Activite {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.imgAct {
+    width: 350px;
+    height: 470px;
+    border-radius: 20% 20% 0 0;
+}
+
+.imgActBorder {
+    border: solid white 1px;
+    box-shadow: 0 0 6px rgb(29, 49, 63);
+    border-radius: 20% 20% 0 0;
+
+}
+
+.txtAct {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+                /***Footer***/
+
+footer{
+        background-color: var(--filter-bg-color);
+        display: flex;
+        justify-content: space-between;
+        margin: 150px 100px 0 100px;
+        font-size: 24px;
+        text-align: center;
+}
+
+.txtFooter {
+    font-size: 32px;
+}
+
+
+/***Responsive***/
+
+@media screen and (max-width: 1200px) {
+    
 }
