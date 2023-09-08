@@ -13,7 +13,7 @@
      color: var(--main-color);
  }
     
-
+ 
             /*Header*/
 
 header {
@@ -22,6 +22,7 @@ header {
     justify-content: space-between;
     font-size: 24px;
 }
+
 
             /*Body*/
 
@@ -55,11 +56,15 @@ header {
     border: 2px solid var(--main-color);
     color: var(--filter-bg-color);
     background-color: var(--main-color);
-    border-radius: 0% 8% 8% 0%;
+    border-radius: 0 8px 8px 0;
 }
+    .searchButton:hover {
+        color: red;
+    }
 
-.searchButton:hover {
-    color: red;
+.loupe {
+    color: white;
+    display: none;
 }
 
 .Filtres {
@@ -70,7 +75,7 @@ header {
 
 .filtreButton {
     border: solid var(--main-bg-color);
-    border-radius:35%;
+    border-radius:50px;
     width: 180px;
     padding: 15px;
     margin-left: 25px;
@@ -78,50 +83,54 @@ header {
     text-align: center;
     color: var(--main-color);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .filtreButton:hover {
-    color: var(--main-color);
-    border-color: var(--main-bg-color);
+    color: red;
+    border-color: var(--main-color);
 }
 
 .infoLogo {
     border: solid 1px;
-    border-radius: 50%;
+    border-radius: 50px;
     background-color: white;
     width: 24px;
-    height: 24px;
+    height: 20px;
+    padding-top: 4px;
     text-align: center;
-    line-height: 24px;
     color: var(--main-color);
     border-color: var(--main-color);
+    justify-content: space-around;
 }
 
                 /**Grande section**/
 
 .marseillepopulaire {
     display: flex;
-    flex-direction: row;
     margin-top: 30px;
+    justify-content: space-between;
+    margin:  20px;
 }
 
             /**Zone Hébergement à Marseille**/
 
 .zone_marseille {
+    flex: 0 0 66%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 10% 40% 40% 10%;
     background-color: var(--main-bg-color);
+    border-radius: 20px;
     margin: 0 20px 0 20px;
     gap: 20px;
-    
+    padding: 20px;
 }
-    .marseilleImg {
-        width: 100%;
-        height: 200px;
-        gap: 5px;
-        border-radius: 20% 20% 0 0;
+.marseilleImg {
+    width: 430px;
+    height: 200px;
+    gap: 5px;
+    border-radius: 20px 20px 0 0;
     }
 
     .art0 {
@@ -137,8 +146,7 @@ header {
         grid-row-start: 2;
         grid-row-end: 2;
         border: solid 1px white;
-        border-radius: 20% 20% 0 0;
-        margin-bottom: 25px;
+        border-radius: 20px 20px 0 0;
         background-color:white;
         align-items: center;
         text-align: center;
@@ -150,9 +158,8 @@ header {
         grid-row-start: 2;
         grid-row-end: 2;
         border: solid 1px white;
-        border-radius: 20% 20% 0 0;
-        margin-bottom: 25px;
-        background-color: var(--main-bg-color);
+        border-radius: 20px 20px 0 0;
+        background-color: white;
         align-items: center;
         text-align: center;
     }
@@ -163,9 +170,8 @@ header {
         grid-row-start: 2;
         grid-row-end: 2;
         border: solid 1px white;
-        border-radius: 20% 20% 0 0;
-        margin-bottom: 25px;
-        background-color: var(--main-bg-color);
+        border-radius: 20px 20px 0 0;
+        background-color: white;
         align-items: center;
         text-align: center;
     }
@@ -176,9 +182,8 @@ header {
         grid-row-start: 3;
         grid-row-end: 3;
         border: solid 1px white;
-        border-radius: 20% 20% 0 0;
-        margin-bottom: 25px;
-        background-color: var(--main-bg-color);
+        border-radius: 20px 20px 0 0;
+        background-color: white;
         align-items: center;
         text-align: center;
     }
@@ -189,9 +194,8 @@ header {
         grid-row-start: 3;
         grid-row-end: 3;
         border: solid 1px white;
-        border-radius: 20% 20% 0 0;
-        margin-bottom: 25px;
-        background-color: var(--main-bg-color);
+        border-radius: 20px 20px 0 0;
+        background-color: white;
         align-items: center;
         text-align: center;
     }
@@ -202,9 +206,8 @@ header {
         grid-row-start: 3;
         grid-row-end: 3;
         border: solid 1px white;
-        border-radius: 20% 20% 0 0;
-        margin-bottom: 25px;
-        background-color: var(--main-bg-color);
+        border-radius: 20px 20px 0 0;
+        background-color: white;
         align-items: center;
         text-align: center;
     }
@@ -215,87 +218,72 @@ header {
         grid-row-start: 4;
         grid-row-end: 4;
         margin-bottom: 50px;
-
     }
 
-    .marseillepopulaire, .zone_marseille, .zone_populaire {
-        width: 100%;}
 
             /**Zone les plus populaires**/
 
 .zone_populaire {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--filter-bg-color);
-    width: 25%;
-    gap: 50px;
-    padding: 20px;
-    margin: 0 20px 0 0;
-    
+background-color: var(--main-bg-color);
+border-radius: 20px;
+width: 50%;
+flex: 0 0 30%; 
+padding: 20px;
 }
-    .populaireImg {
-        width: 200px;
-        height: 150px;
-    }
 
 .h1populaire {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
-.pop1 {
-    background-color: var(--main-bg-color);
-    width: 100%;
-    border-radius: 10%;
+.divpop {
+    border: solid 1px white;
+    border-radius: 50px 0 0 50px;
+    padding: 2px;
+    background-color: white;
     display: flex;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
 
-}
-
-.pop2 {
-    background-color: var(--main-bg-color);
-    width: 100%;
-    border-radius: 10%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-.pop3 {
-    background-color: var(--main-bg-color);
-    width: 100%;
-    border-radius: 10%;
-    display: flex;
-    align-items: center;
-    text-align: center;
 }
 
 .img7, .img8, .img9 {
-    border-radius: 20% 0 0 20%;
+    width: 200;
+    height: 220;
+    border-radius: 50px 0 0 50px;
 }
 
+.txtPop {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.2em;
+}
 
             /**Zone Activités**/
+
+.h1Act {
+    margin: 20px;
+}
 
 .Activite {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 20px 0 20px;
     
 }
 
 .imgAct {
     width: 350px;
     height: 470px;
-    border-radius: 20% 20% 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 .imgActBorder {
     border: solid white 1px;
     box-shadow: 0 0 6px rgb(29, 49, 63);
-    border-radius: 20% 20% 0 0;
+    border-radius: 20px 20px 0 0;
 
 }
 
@@ -308,7 +296,7 @@ header {
                 /***Footer***/
 
 footer{
-        background-color: var(--filter-bg-color);
+        background-color: var(--main-bg-color);
         display: flex;
         justify-content: space-between;
         margin: 150px 100px 0 100px;
@@ -321,8 +309,193 @@ footer{
 }
 
 
-/***Responsive***/
+                /*******Responsive*******/
 
-@media screen and (max-width: 1200px) {
+        /****1200px****/
+
+@media screen and (max-width:1200px) {
+    .logoBooki {
+        display: flex;
+    }    
+
+    .marseillepopulaire {
+        flex-direction: column;
+        gap: 50px;
+    }
     
+    .marseilleImg {
+        width: 250px;
+        height: 180px;
+    }
+
+    .zone_marseille {
+
+        flex-direction: column;
+    }
+
+    .zone_populaire {
+        margin: 0 200px 0 20px;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .popznimg {
+        flex-direction: row;
+    }
+
+    .popznimg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+        .artpop1 {
+            grid-column-start: 1; 
+            grid-column-end: 1; 
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+        .artpop2 {
+            grid-column-start: 2; 
+            grid-column-end: 2; 
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+        .artpop3 {
+            grid-column-start: 3; 
+            grid-column-end: 3; 
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+    .imgAct {
+        width: 230px;
+        height: 260px;
+    }
+
+    .txtAct {
+    font-size: 16px;
+    }
+}
+
+      /*******480 breakpoint*******/
+
+
+@media screen and (max-width:480px) {
+
+    
+    header {
+        flex-direction: column;    
+    }
+    
+    .logoBooki {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .ankrehdp {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bordersearch {
+        display: none
+
+    }
+
+    .Filtres {
+        display: grid;
+        grid-template-columns: 20%, 40% 40%;
+        grid-template-rows:20%, 40% 40%;
+        gap: 15px;
+    }
+
+    .titrefiltre {
+        grid-column-start: 1; 
+        grid-column-end: 1; 
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .filtre1 {
+        grid-column-start: 2; 
+        grid-column-end: 2; 
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .filtre2 {
+        grid-column-start: 3; 
+        grid-column-end: 3; 
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .filtre4 {
+        grid-column-start: 3; 
+        grid-column-end: 3; 
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .filtre3 {
+        grid-column-start: 2; 
+        grid-column-end: 2; 
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    
+    .marseillepopulaire {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .zone_marseille {
+        grid-column-start: 1; 
+        grid-column-end: 1; 
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .zone_populaire {
+        grid-column-start: 1; 
+        grid-column-end: 1; 
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .popznimg {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .artpop1 {
+        grid-column-start: 1; 
+        grid-column-end: 1; 
+        grid-row-start: 1;
+        grid-row-end: 1; 
+    }
+
+    .artpop2 {
+        grid-column-start: 1; 
+        grid-column-end: 1; 
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .artpop3 {
+        grid-column-start: 1; 
+        grid-column-end: 1; 
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+}
+
+@media screen and (min-width:479) {
+
+    .loupe {
+        display: block;
+        color: white;
+    }
 }
