@@ -1,6 +1,7 @@
         /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -9,11 +10,11 @@
     --filter-bg-color: #DEEBFF;
 }
 
- .fa-solid {
-     color: var(--main-color);
- }
+.fa-solid {
+    color: var(--main-color);
+}
     
- 
+
             /*Header*/
 
 header {
@@ -21,16 +22,28 @@ header {
     flex-direction: row;
     justify-content: space-between;
     font-size: 24px;
+    width: 100%;
+}
+ main {
+width: 100%;
 }
 
 
+img {
+    object-fit: cover;
+}
+
             /*Body*/
 
+body {
+    width: 100%;
+}
         /**Zone trouver un Hébergement**/
 
 .trouvez-hébergement, p{
     font-size: 16px;
     margin-top: 0;
+    width: 66%;
 }
 
 .search {
@@ -44,7 +57,7 @@ header {
 }
 
 .searchBarre {
-    width: 10%;
+    width: 120px;
     border: 2px solid var(--main-color);
     border-left: none;
     border-right: none;
@@ -65,6 +78,7 @@ header {
 .loupe {
     color: white;
     display: none;
+    visibility: hidden;
 }
 
 .Filtres {
@@ -96,8 +110,8 @@ header {
     border-radius: 50px;
     background-color: white;
     width: 24px;
-    height: 20px;
-    padding-top: 4px;
+    height: 22px;
+    padding-top: 2px;
     text-align: center;
     color: var(--main-color);
     border-color: var(--main-color);
@@ -109,14 +123,13 @@ header {
 .marseillepopulaire {
     display: flex;
     margin-top: 30px;
-    justify-content: space-between;
     margin:  20px;
+    width: 100%;
 }
 
             /**Zone Hébergement à Marseille**/
 
 .zone_marseille {
-    flex: 0 0 66%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 10% 40% 40% 10%;
@@ -125,13 +138,15 @@ header {
     margin: 0 20px 0 20px;
     gap: 20px;
     padding: 20px;
+    width: 66%;
 }
 .marseilleImg {
     width: 430px;
     height: 200px;
     gap: 5px;
     border-radius: 20px 20px 0 0;
-    }
+    ;    
+}
 
     .art0 {
         grid-column-start: 1; 
@@ -226,9 +241,9 @@ header {
 .zone_populaire {
 background-color: var(--main-bg-color);
 border-radius: 20px;
-width: 50%;
 flex: 0 0 30%; 
 padding: 20px;
+width: 33%;
 }
 
 .h1populaire {
@@ -271,7 +286,7 @@ padding: 20px;
     justify-content: space-between;
     align-items: center;
     margin: 0 20px 0 20px;
-    
+    width: 100%;
 }
 
 .imgAct {
@@ -302,6 +317,7 @@ footer{
         margin: 150px 100px 0 100px;
         font-size: 24px;
         text-align: center;
+        width: 100%;
 }
 
 .txtFooter {
@@ -319,7 +335,9 @@ footer{
     }    
 
     .marseillepopulaire {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
         gap: 50px;
     }
     
@@ -329,14 +347,17 @@ footer{
     }
 
     .zone_marseille {
-
-        flex-direction: column;
+        grid-column-start: 1; 
+        grid-column-end: 1; 
+        grid-row-start: 1;
+        grid-row-end: 1;
     }
 
     .zone_populaire {
-        margin: 0 200px 0 20px;
-        flex-direction: row;
-        width: 100%;
+        grid-column-start: 1; 
+        grid-column-end: 1; 
+        grid-row-start: 2;
+        grid-row-end: 2;
     }
 
     .popznimg {
@@ -376,7 +397,7 @@ footer{
     }
 }
 
-      /*******480 breakpoint*******/
+        /*******480 breakpoint*******/
 
 
 @media screen and (max-width:480px) {
@@ -404,7 +425,7 @@ footer{
 
     .Filtres {
         display: grid;
-        grid-template-columns: 20%, 40% 40%;
+        grid-template-columns: 50% 50%;
         grid-template-rows:20%, 40% 40%;
         gap: 15px;
     }
@@ -417,37 +438,39 @@ footer{
     }
 
     .filtre1 {
-        grid-column-start: 2; 
-        grid-column-end: 2; 
-        grid-row-start: 1;
-        grid-row-end: 1;
+        grid-column-start: 1; 
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
     }
 
     .filtre2 {
-        grid-column-start: 3; 
-        grid-column-end: 3; 
-        grid-row-start: 1;
-        grid-row-end: 1;
-    }
-
-    .filtre4 {
-        grid-column-start: 3; 
-        grid-column-end: 3; 
-        grid-row-start: 2;
-        grid-row-end: 2;
-    }
-
-    .filtre3 {
         grid-column-start: 2; 
         grid-column-end: 2; 
         grid-row-start: 2;
         grid-row-end: 2;
     }
+
+    .filtre4 {
+        grid-column-start: 2; 
+        grid-column-end: 2; 
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+
+    .filtre3 {
+        grid-column-start: 1; 
+        grid-column-end: 1; 
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
     
     .marseillepopulaire {
+        gap: 0;
+        margin: none;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
     }
 
     .zone_marseille {
@@ -455,6 +478,17 @@ footer{
         grid-column-end: 1; 
         grid-row-start: 2;
         grid-row-end: 2;
+        justify-content: center;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .txtPop{
+        display: flex;
+        
+    }
+
+    .marseillepopulaire {
+        margin: 0;
     }
 
     .zone_populaire {
@@ -462,12 +496,15 @@ footer{
         grid-column-end: 1; 
         grid-row-start: 1;
         grid-row-end: 1;
+        height: 800px;
     }
 
     .popznimg {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+
     }
 
     .artpop1 {
@@ -490,12 +527,35 @@ footer{
         grid-row-start: 3;
         grid-row-end: 3;
     }
-}
 
-@media screen and (min-width:479) {
-
-    .loupe {
-        display: block;
-        color: white;
+    .zone_marseille {
+        display: flex;
+        flex-direction: column;
     }
+
+    .marseilleImg {
+        width: 300px;
+    }
+
+    .Activite {
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: left;
+    }
+
+.loupe {
+        display: block;
+        visibility: visible;
+    }
+    .loupe:hover {
+    color: red;
+    }
+
+
+
 }
