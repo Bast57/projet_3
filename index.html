@@ -17,39 +17,41 @@
     <div class="main-container">
         <header>
             <div class="logoBooki">
-                <img src="images/logo/Booki.png" alt="logo Booki">
+                <img class="sizelbooki" src="images/logo/Booki.png" alt="logo Booki">
             </div>
             <div class="ankre">    
-                <a href="#ankre_hébergements">Hébergements</a>
-                <a href="#ankre_activités">Activités</a>
+                <nav class="ankreheb"><a href="#ankre_hébergements">Hébergements</a></nav>
+                <nav class="ankreact"><a href="#ankre_activités">Activités</a></nav>
             </div> 
         </header>    
         <main>
             <section class="trouvez-hébergement">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre-ville ou en pleine nature</p>
-                        <section class="search">
-                            <i class="searchLogo fas fa-location-dot"></i>
-                            <input type="text" class="searchBarre">
-                            <button type="submit" class="searchButton">
-                                <i class="bordersearch"> Rechercher</i>
-                                <i class="loupe fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </section>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <section class="search">
+                    <i class="searchLogo fas fa-location-dot"></i>
+                    <div class=" bordure-search">
+                        <input type="text" value="Marseille" autocorrect="off" autocapitalize="off" class="searchBarre">
+                        <button type="submit" class="searchButton">
+                            <i class="bordersearch"><p class="bordersearch">Rechercher</p></i>
+                            <i class="loupe fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </section>
                 <section class="ZoneFiltres">
                     <p class="titrefiltre"><strong>Filtres</strong></p>
                         <div class="filtre">
                             <div class="filtreButton filtre1">
-                                <i class="fa-solid fas fa-money-bill-wave"><p> Economique</p></i>
+                                <i class="fa-solid fas fa-money-bill-wave"></i><p class=" txtfltr"> Economique</p>
                             </div>
                             <div class="filtreButton filtre2">
-                                <i class="fa-solid fas fa-person">  <p>Familial</p></i>
+                                <i class="fa-solid fas fa-person"></i><p class=" txtfltr"> Familial</p>
                             </div>
                             <div class="filtreButton filtre3">
-                                <i class="fa-solid fas fa-heart"><p> Romantique</p></i>
+                                <i class="fa-solid fas fa-heart"></i><p class=" txtfltr"> Romantique</p>
                             </div>
                             <div class="filtreButton filtre4">
-                                <i class="fa-solid fa-fire"> <p> Nos pepites</p></i>
+                                <i class="fa-solid fas fa-fire"></i><p class=" txtfltr"> Nos pepites</p>
                             </div>
                         </div>
                 </section>
@@ -61,10 +63,10 @@
                     <a href="" class="art1 art">
                         <article>
                             <img class="marseilleImg img1" src="images/hebergements/fred-kleber.jpg" alt="Hotel du port">
-                                <div class="txtPop">
-                                    <p><strong> Hôtel du port</strong><br>Nuit à partir de 52€</p>
-                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i><i class="fa-xs fa-solid fa-star" aria-hidden="true"></i><i class="fa-xs fa-solid fa-star" aria-hidden="true"></i><i class="fa-xs fa-solid fa-star" aria-hidden="true"></i><i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                                </div>       
+                            <div class="txtPop">
+                                <p><strong> Hôtel du port</strong><br>Nuit à partir de 52€</p>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i><i class="fa-xs fa-solid fa-star" aria-hidden="true"></i><i class="fa-xs fa-solid fa-star" aria-hidden="true"></i><i class="fa-xs fa-solid fa-star" aria-hidden="true"></i><i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                            </div>       
                         </article>
                     </a>
                     <a href="" class="art2 art">
@@ -167,26 +169,25 @@
                     </div>
                 </section>
             </div>
-                <h2>Les Activités</h2>
+                <h2 class="h2Act" id="ankre_activités">Les Activités</h2>
             <section class="Activite">
-                <div class="imgActBorder">
+                <div class="imgActBorder"><a href="">
                     <img class="imgAct" src="images/activites/reno-laithienne.jpg" alt="">
-                    <p class="txtAct">Vieux Port</p>
+                    <p class="txtAct">Vieux Port</p></a>
                 </div>
-                <div class="imgActBorder">
+                <div class="imgActBorder"><a href="">
                     <img class="imgAct" src="images/activites/paul-hermann.jpg" alt="">
-                    <p class="txtAct">Fort de Pomègues</p>
+                    <p class="txtAct">Fort de Pomègues</p></a>
                 </div>
-                <div class="imgActBorder">
+                <div class="imgActBorder"><a href="">
                     <img class="imgAct" src="images/activites/kilyan-sockalingum.jpg" alt="">
-                    <p class="txtAct">Parc National des Calanques</p>
+                    <p class="txtAct">Parc National des Calanques</p></a>
                 </div>
-                <div class="imgActBorder">
+                <div class="imgActBorder"><a href="">
                     <img class="imgAct" src="images/activites/florian-wehde.jpg" alt="">
-                    <p class="txtAct">Notre-Dame-de-la-Garde</p>
+                    <p class="txtAct">Notre-Dame-de-la-Garde</p></a>
                 </div>
             </section>
-        
     <footer>
         <div>
             <p class="txtFooter"><strong>À propos</strong></p>
